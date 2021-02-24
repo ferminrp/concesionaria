@@ -9,6 +9,9 @@ let concesionaria = {
   },
 
   buscarAuto: function(patenteBuscada) {
+    console.log('========================')
+    console.log('Buscando el auto de patente '+patenteBuscada)
+    console.log('========================')
     autoBuscado = autos.filter(auto => auto.patente === patenteBuscada)[0];
     return autoBuscado != undefined ? autoBuscado : null;
 

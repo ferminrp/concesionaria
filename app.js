@@ -8,6 +8,9 @@ switch(accion) {
         funcionalidadTareas.listar();
         break;
 
+    case 'buscar':
+        console.log(funcionalidadTareas.buscarAuto(parametroAdicional))
+        break;
 
     default:
         console.log('No entiendo qué me estás pidiendo');
