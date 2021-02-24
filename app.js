@@ -30,7 +30,7 @@ switch(accion) {
         break;
 
     case 'nuevos':
-        console.log(funcionalidadTareas.autosParaLaVenta());
+        console.log(funcionalidadTareas.autosNuevos());
         break;
 
     case 'listaVentas':
