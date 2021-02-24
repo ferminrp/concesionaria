@@ -47,4 +47,20 @@ Utilizando este comando se imprime una lista de los precios de todos los autos q
 
 ### Total Ventas
 
-Con este comando, similar al anterior, recibimos una
+Con este comando, similar al anterior, recibimos el valor total de todas las ventas realizadas
+
+``` node app.js totalVentas	```
+
+### Puede Comprar
+
+Con este comando, e ingresando dos datos de una persona determinaremos que autos esa persona podria comprar.
+
+El primer parametro es el monto maximo que esa persona esta dispuesta a pagar.
+
+El segundo parametro es el monto máximo por cuota.
+
+``` node app.js puedeComprar [monto total] [monto cuota] ```
+
+por ejemplo:
+
+``` node app.js puedeComprar 900000 150000 ```
