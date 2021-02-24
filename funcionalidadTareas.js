@@ -37,6 +37,9 @@ let concesionaria = {
   },
 
   autosNuevos: function() {
+    console.log('========================')
+    console.log('Estos autos estan en venta y son 0km:')
+    console.log('========================')
     return this.autosParaLaVenta().filter(auto => auto.km == 0)
   },
 
