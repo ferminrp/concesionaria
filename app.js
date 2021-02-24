@@ -14,6 +14,7 @@ switch(accion) {
         break;
 
     case 'vender':
+        funcionalidadTareas.venderAuto(parametroAdicional);
         break;
     
     case 'enVenta':

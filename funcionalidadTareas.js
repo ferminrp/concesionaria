@@ -1,8 +1,8 @@
-let objetoAutos = require('./operacionesArchivo.js');
+let operacionesArchivo = require('./operacionesArchivo.js');
 
 
 let concesionaria = {
-  autos: objetoAutos.leerArchivoJson(),
+  autos: operacionesArchivo.leerArchivoJson(),
 
   listar: function() {
       // cuando se llama a este metodo se imprimen todos los autos en autos.json
@@ -30,7 +30,8 @@ let concesionaria = {
         return auto;
       }
     })
-
+    operacionesArchivo.grabarUnJson(JSON.stringify(autos));
+    console.log('Felicitaciones, auto vendido!')
   },
 
   autosParaLaVenta: function() {
