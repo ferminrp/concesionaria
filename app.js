@@ -12,6 +12,24 @@ switch(accion) {
         console.log(funcionalidadTareas.buscarAuto(parametroAdicional))
         break;
 
+    case 'vender':
+        break;
+    
+    case 'enVenta':
+        break;
+
+    case 'nuevos':
+        break;
+
+    case 'listaVentas':
+        break;
+
+    case 'totalVentas':
+        break;
+
+    case 'puedeComprar':
+        break
+
     default:
         console.log('No entiendo qué me estás pidiendo');
         console.log('Las acciones disponibles son: A,B,C ');
