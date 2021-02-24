@@ -2,6 +2,7 @@ let funcionalidadTareas = require('./funcionalidadTareas.js');
 
 let accion = process.argv[2];
 let parametroAdicional = process.argv[3];
+let parametroAdicionalDos = process.argv[4];
 
 switch(accion) {
     case 'listar':
@@ -32,6 +33,13 @@ switch(accion) {
         break;
 
     case 'puedeComprar':
+        // toma como primer argumento valor total que el usuario esta dispuesto a pagar
+        // toma como segundo argumento valor que el usuario puede pagar por cuota
+        let persona = {
+            "capacidadDePagoTotal" : parametroAdicional,
+            "capacidadDePagoEnCuotas" : parametroAdicionalDos
+        }
+        console.log(funcionalidadTareas.autosQuePuedeComprar(persona));
         break
 
     default:
