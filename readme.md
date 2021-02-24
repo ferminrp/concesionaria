@@ -30,3 +30,21 @@ Utilizando este comando seguido de una patente se pasa el estado de un auto a ve
 ### En Venta
 
 Utilizando este comando se imprime una lista de todos los autos que aun no han sido vendidos
+
+``` node app.js enVenta	```
+
+### Nuevos
+
+Utilizando este comando se imprime una lista de todos los autos que aun no han sido vendidos y que son 0km
+
+``` node app.js nuevos	```
+
+### Lista Ventas
+
+Utilizando este comando se imprime una lista de los precios de todos los autos que se han vendido
+
+``` node app.js listaVentas	```
+
+### Total Ventas
+
+Con este comando, similar al anterior, recibimos una
