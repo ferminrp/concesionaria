@@ -75,6 +75,9 @@ let concesionaria = {
   puedeComprar: function(auto, persona){
     // este metodo recibe un objeto auto y un objeto persona, no se puede llamar directamente.
     // dice true o false si esa persona puede comprar ese auto
+    // lo que hace es primero chequear si el precio del auto esta por debajo de lo que la persona esta dispuesta a pagar
+    // despues se fija que las cuotas tambien esten por debajo de lo que la persona pagaria por cuota
+    // si y solo si ambas condiciones son true devuelve true, en otro caso devuelve false
     return auto.precio <= persona.capacidadDePagoTotal  && auto.precio / auto.cuotas <= persona.capacidadDePagoEnCuotas
   },
 
