@@ -30,7 +30,9 @@ let concesionaria = {
   },
 
   autosParaLaVenta: function() {
+    console.log('========================')
     console.log('Estos autos estan en venta:')
+    console.log('========================')
     return autos.filter(auto => auto.vendido == false)
   },
 
