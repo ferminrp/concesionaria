@@ -16,6 +16,7 @@ switch(accion) {
         break;
     
     case 'enVenta':
+        console.log(funcionalidadTareas.autosParaLaVenta());
         break;
 
     case 'nuevos':
