@@ -20,5 +20,16 @@
         "anio": 2019,
         "patente": "JJK116",
         "vendido": false
+    },
+    {
+        "marca": "Toyota",
+        "modelo": "Hilux",
+        "precio": 500000,
+        "km": 0,
+        "color": "Blanco",
+        "cuotas": 18,
+        "anio": 2016,
+        "patente": "JBB118",
+        "vendido": true
     }
 ]
