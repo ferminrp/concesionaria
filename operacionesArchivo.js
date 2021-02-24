@@ -1,6 +1,6 @@
-// Requiero el módulo nativo
 const fs = require('fs');
-// Defino un objeto literal
+
+
 let operacionesArchivos =
 {
     archivo: 'autos.json',
@@ -10,8 +10,8 @@ let operacionesArchivos =
         return JSON.parse(fs.readFileSync(this.archivo, 'utf-8'));
     },
 
-    grabarUnJson: function (tareas) {
-        return  fs.writeFileSync(this.archivo, tareas)
+    grabarUnJson: function (autos) {
+        return  fs.writeFileSync(this.archivo, autos)
     },
 
  
