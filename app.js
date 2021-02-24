@@ -54,6 +54,6 @@ switch(accion) {
 
     default:
         console.log('No entiendo qué me estás pidiendo');
-        console.log('Las acciones disponibles son: A,B,C ');
+        console.log('Las acciones disponibles son: vender, enVenta, nuevos, listaVentas, totalVentas, puedeComprar ');
         break;
 }
