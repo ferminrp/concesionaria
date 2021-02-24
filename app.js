@@ -35,6 +35,7 @@ switch(accion) {
     case 'puedeComprar':
         // toma como primer argumento valor total que el usuario esta dispuesto a pagar
         // toma como segundo argumento valor que el usuario puede pagar por cuota
+        // devuelve todos los autos que la persona puede pagar con esas restricciones
         let persona = {
             "capacidadDePagoTotal" : parametroAdicional,
             "capacidadDePagoEnCuotas" : parametroAdicionalDos

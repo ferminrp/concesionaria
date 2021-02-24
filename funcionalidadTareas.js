@@ -1,12 +1,12 @@
-let autos = require('./autos');
+let objetoAutos = require('./operacionesArchivo.js');
 
 
 let concesionaria = {
-  autos: autos,
+  autos: objetoAutos.leerArchivoJson(),
 
   listar: function() {
       // cuando se llama a este metodo se imprimen todos los autos en autos.json
-      console.log(autos);
+      console.log(this.autos);
   },
 
   buscarAuto: function(patenteBuscada) {
@@ -14,7 +14,7 @@ let concesionaria = {
     console.log('========================')
     console.log('Buscando el auto de patente '+patenteBuscada)
     console.log('========================')
-    autoBuscado = autos.filter(auto => auto.patente === patenteBuscada)[0];
+    autoBuscado = this.autos.filter(auto => auto.patente === patenteBuscada)[0];
     return autoBuscado != undefined ? autoBuscado : null;
 
   },
@@ -22,7 +22,7 @@ let concesionaria = {
   venderAuto: function(patenteBuscada) {
     // cuando se llama a este metodo se sobrescribe el objeto de autos, cambiando este auto en particular a vendido
     let autoVendido = this.buscarAuto(patenteBuscada);
-    autos = autos.map(function(auto){
+    autos = this.autos.map(function(auto){
       if (auto.patente == patenteBuscada){
         auto.vendido = true;
         return auto;
@@ -30,6 +30,7 @@ let concesionaria = {
         return auto;
       }
     })
+
   },
 
   autosParaLaVenta: function() {
@@ -37,7 +38,7 @@ let concesionaria = {
     console.log('========================')
     console.log('Estos autos estan en venta:')
     console.log('========================')
-    return autos.filter(auto => auto.vendido == false)
+    return this.autos.filter(auto => auto.vendido == false)
   },
 
   autosNuevos: function() {
@@ -51,7 +52,7 @@ let concesionaria = {
 
   listaDeVentas: function() {
     // cuando se llama a este metodo se imprime un array de precios de autos cuyo estado vendido es true
-    let autosVendidos = autos.filter(auto => auto.vendido == true);
+    let autosVendidos = this.autos.filter(auto => auto.vendido == true);
     var ventas = []
     autosVendidos.forEach(function(auto){
       ventas.push(auto.precio);
