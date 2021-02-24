@@ -15,7 +15,7 @@ switch(accion) {
     case 'vender':
         break;
     
-    case 'enventa':
+    case 'enVenta':
         console.log(funcionalidadTareas.autosParaLaVenta());
         break;
 
@@ -24,9 +24,11 @@ switch(accion) {
         break;
 
     case 'listaVentas':
+        console.log(funcionalidadTareas.listaDeVentas());
         break;
 
     case 'totalVentas':
+        console.log(funcionalidadTareas.totalDeVentas());
         break;
 
     case 'puedeComprar':
